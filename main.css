@@ -1,3 +1,36 @@
-body {
-  background-color: aliceblue;
-}
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Rubik, Arial, Helvetica, san-serif;
+    background-color: aliceblue;
+    color: #4a4a4a;
+  }
+
+  .header {
+    background-color: #fff;
+    text-align: center;
+      padding-top: 10px;
+  }
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .menu__item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .menu__link {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0 13px;
+    display: inline-block;
+  }
