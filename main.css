@@ -21,6 +21,11 @@ body {
   padding-top: 10px;
 }
 
+.logo__container {
+  display: inline-block;
+  height: 61px;
+}
+
 @media all and (min-width: 768px) {
 
   .page__header {
