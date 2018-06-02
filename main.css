@@ -15,11 +15,24 @@ body {
 
 /*HEADER*/
 
-.header {
+.page__header {
   background-color: #fff;
   text-align: center;
   padding-top: 10px;
 }
+
+@media all and (min-width: 768px) {
+
+  .page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+}
+
+/*NAV*/
 
 .menu {
   padding: 0;
@@ -40,9 +53,21 @@ body {
   display: inline-block;
 }
 
+@media all and (min-width: 768px) {
+
+  .menu__item {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .menu__link {
+    padding-bottom: 10px;
+  }
+}
+
 /*MAIN*/
 
-.main {
+.page__main {
   flex-grow: 1;
   background-color: #3CDBC0;
   position: relative;
@@ -56,4 +81,5 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  max-width: 250px;
 }
